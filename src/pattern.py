@@ -12,7 +12,7 @@ class Pattern:
 
     def __repr__(self):
         n = self.encode36(self.index)
-        s = "#PTRN0#\n#.OPVL#\n"
+        s = f"#PTRN{n}#\n#.OPVL#\n"
         for note in self.seq:
             s += f"#.{note.orca}#\n"
 

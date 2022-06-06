@@ -45,7 +45,7 @@ class MidiReader:
         patterns = patterns.reshape((-1, self.pattern_length))
 
         print(patterns)
-        p = Pattern(0, patterns[0])
+        p = Pattern(21, patterns[0])
         print(p)
 
 

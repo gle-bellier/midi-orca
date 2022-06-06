@@ -2,6 +2,9 @@ from typing import List
 import pretty_midi
 import numpy as np
 
+from src.note import Note
+from src.pattern import Pattern
+
 
 class MidiReader:
 
@@ -42,6 +45,8 @@ class MidiReader:
         patterns = patterns.reshape((-1, self.pattern_length))
 
         print(patterns)
+        p = Pattern(0, patterns[0])
+        print(p)
 
 
 if __name__ == '__main__':
